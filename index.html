@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anisio Diogo | Desenvolvedor Front-end &amp; UI/UX Designer</title>
+  <meta name="description" content="Portfólio de Anisio Diogo — desenvolvedor Front-end e especialista em UI/UX Design em Teresina/PI. Sites, landing pages, e-commerces, dashboards e automação." />
+  <meta property="og:title" content="Anisio Diogo | Dev Front-end & UI/UX" />
+  <meta property="og:description" content="Sites, landing pages e sistemas web do protótipo ao código final." />
+  <meta property="og:image" content="assets/img/foto-anisio.png" />
+  <meta name="theme-color" content="#8a0000" />
+  <link rel="icon" type="image/png" href="assets/img/logo-nav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    /* aplica o tema salvo antes de pintar a página */
+    try { var t = localStorage.getItem("tema"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="topo" id="topo">
+    <nav class="topo__inner" aria-label="Navegação principal">
+      <ul class="topo__links" id="menu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li class="so-mobile"><a href="#contato">Contato</a></li>
+      </ul>
+
+      <a href="#topo" class="logo" id="logo" aria-label="Dev Anísio — voltar ao topo">
+        <img class="logo__abre" src="assets/img/logo-chave-abre.png" alt="" width="28" height="83" />
+        <span class="logo__nome" aria-hidden="true"><span class="logo__dev">dev</span><span class="logo__anisio">Anísio</span></span>
+        <img class="logo__fecha" src="assets/img/logo-chave-fecha.png" alt="" width="16" height="41" />
+      </a>
+
+      <div class="topo__acoes">
+        <a class="topo__contato" href="#contato">Contato</a>
+        <a class="btn btn--vermelho btn--nav js-whatsapp" href="#" target="_blank" rel="noopener">Vamos Conversar</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- botão de tema (o {☼} da lateral) -->
+  <button class="tema" id="tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+    <img class="tema__chave" src="assets/img/toggle-chave.png" alt="" width="15" height="46" />
+    <img class="tema__sol" src="assets/img/toggle-sol.png" alt="" width="35" height="33" />
+    <svg class="tema__lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+    <img class="tema__chave tema__chave--fecha" src="assets/img/toggle-chave.png" alt="" width="15" height="46" />
+  </button>
+
+  <main id="conteudo">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" aria-labelledby="hero-nome">
+      <div class="hero__texto">
+        <span class="tag tag--abre">&lt;about-me&gt;</span>
+        <p class="hero__ola"><span>Olá! Meu nome é</span></p>
+        <h1 class="hero__nome" id="hero-nome">Anisio Diogo</h1>
+        <p class="hero__cargo">Sou Desenvolvedor Front-end e Especialista em UI/UX Designer</p>
+        <p class="hero__resumo">
+          Atuo como <strong>desenvolvedor Front-end e especialista em UX/UI Design</strong>. Há 4 anos conectando estética e funcionalidade para criar <strong>sites, landing pages e sistemas web.</strong> Cuido de cada detalhe, desde <strong>o protótipo até o código final</strong>, garantindo performance e usabilidade.
+        </p>
+        <div class="hero__botoes">
+          <a class="btn btn--vermelho btn--oi js-whatsapp" href="#" target="_blank" rel="noopener">
+            Mande um Oi! <img src="assets/img/icone-chat.png" alt="" width="34" height="33" />
+          </a>
+          <a class="btn btn--rosa" href="#sobre">Quero conhecer Melhor</a>
+        </div>
+        <span class="tag tag--fecha">&lt;/about-me&gt;</span>
+      </div>
+
+      <div class="hero__painel" aria-hidden="true">
+        <img class="hero__codigo" src="assets/img/hero-codigo.png" alt="" />
+        <img class="hero__brilho" src="assets/img/hero-brilho.png" alt="" />
+        <p class="hero__marca"><span>ANISIO</span><span>DIOGO</span></p>
+        <img class="hero__chave-dir" src="assets/img/chave-direita.png" alt="" />
+        <img class="hero__chave-esq" src="assets/img/chave-esquerda-grande.png" alt="" />
+        <img class="hero__foto" src="assets/img/foto-anisio.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ============================ SOBRE ============================ -->
+    <section class="secao secao--vermelha sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <button class="fone" id="fone" aria-label="Balançar o fone">
+        <img src="assets/img/fone.png" alt="" width="652" height="530" />
+      </button>
+      <div class="container">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Sobre Mim</span>
+        <h2 class="sobre__titulo" id="sobre-titulo">Olá Meu nome é Anisio Diogo.</h2>
+        <div class="sobre__texto">
+          <p>Com 20 anos, moro em Teresina/PI e sou graduando em Ciência da Computação. Mas a minha jornada prática começou cedo: há 4 anos atuo misturando desenvolvimento Front-end e especialista em UX/UI Design. Sou apaixonado por conectar estética e funcionalidade. Minha abordagem une habilidades em pesquisa de usuários, wireframing e prototipagem à implementação técnica do Front-end. Isso me permite criar sites, e-commerces e sistemas web que não são apenas visualmente atraentes, mas intuitivos e centrados no usuário.</p>
+          <p><strong>A cada projeto, um novo desafio.</strong></p>
+          <p><strong>Você tem algum projeto?&nbsp; Vamos tirá-lo do papel?</strong></p>
+        </div>
+        <dl class="sobre__infos">
+          <div><dt>Contato</dt><dd><a class="js-email" href="#">devanisiodiogo@gmail.com</a></dd></div>
+          <div><dt>Telefone</dt><dd><a class="js-telefone" href="#">+55 (99)98185-1934</a></dd></div>
+          <div><dt>Línguas faladas</dt><dd>Português - Inglês</dd></div>
+          <div>
+            <dt>Mídias sociais</dt>
+            <dd class="sociais sociais--pequenas">
+              <a class="js-rede" data-rede="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/img/social-linkedin.png" alt="" /></a>
+              <a class="js-rede" data-rede="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/social-instagram.png" alt="" /></a>
+              <a class="js-rede" data-rede="discord" href="#" target="_blank" rel="noopener" aria-label="Discord"><img src="assets/img/social-discord.png" alt="" /></a>
+              <a class="js-rede" data-rede="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/img/social-github.png" alt="" /></a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================ SERVIÇOS ============================ -->
+    <section class="secao secao--clara servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container centro">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Serviços</span>
+        <h2 class="titulo titulo--vermelho" id="servicos-titulo">Serviços que Ofereço</h2>
+        <p class="subtitulo">Criamos experiências digitais significativas, unindo design intuitivo, desenvolvimento web de alta performance e análise de dados estratégica para destacar seu negócio e liderar categorias.</p>
+
+        <ul class="servicos__grade">
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="UX/UI Design">
+            <img src="assets/img/serv-uxui.png" alt="" width="63" height="63" style="--mt:28;--w:63" />
+            <h3>UX/UI Designer Specialist</h3>
+            <p>Crio protótipos intuitivos e visualmente atraentes, focados em uma experiência do usuário impecável e centrada no usuário.</p>
+          </a></li>
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="Desenvolvimento Web">
+            <img src="assets/img/serv-web.png" alt="" width="87" height="87" style="--mt:13;--w:87" />
+            <h3>Desenvolvimento Web</h3>
+            <p>Crio sites institucionais, responsivos e dinâmicos, do protótipo até a entrega do código final.</p>
+          </a></li>
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="Landing Page">
+            <img src="assets/img/serv-landing.png" alt="" width="75" height="75" style="--mt:18;--w:75" />
+            <h3>Landing Pages</h3>
+            <p>Páginas focadas em captar leads e vender seu serviço ou produto de forma direta e eficiente.</p>
+          </a></li>
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="E-commerce">
+            <img src="assets/img/serv-ecommerce.png" alt="" width="82" height="82" style="--mt:14;--w:82" />
+            <h3>E-commerce</h3>
+            <p>Que tal sua própria loja virtual? Comece a vender seus produtos ou serviços na internet com facilidade.</p>
+          </a></li>
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="Branding e Design Gráfico">
+            <img src="assets/img/serv-branding.png" alt="" width="83" height="83" style="--mt:16;--w:83" />
+            <h3>Branding &amp; Design Gráfico</h3>
+            <p>Criação de logos, identidade visual e materiais gráficos que fortalecem sua marca.</p>
+          </a></li>
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="Power BI e Dashboards">
+            <img src="assets/img/serv-powerbi.png" alt="" width="78" height="78" style="--mt:21;--w:78" />
+            <h3>Power BI &amp; Dashboards</h3>
+            <p>Transformo dados complexos em dashboards interativos e relatórios estratégicos para tomada de decisão.</p>
+          </a></li>
+          <li><a class="servico js-servico" href="#" target="_blank" rel="noopener" data-servico="Banco de Dados e Automação">
+            <img src="assets/img/serv-banco.png" alt="" width="80" height="80" style="--mt:20;--w:80" />
+            <h3>Banco de Dados &amp; Automação</h3>
+            <p>Transformo dados complexos em dashboards interativos e relatórios estratégicos para tomada de decisão.</p>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================ JORNADA ============================ -->
+    <section class="secao secao--vermelha jornada" id="jornada" aria-labelledby="jornada-titulo">
+      <div class="container centro">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Jornada</span>
+        <h2 class="titulo" id="jornada-titulo">Formação e Experiência</h2>
+      </div>
+
+      <ol class="linha">
+        <li class="linha__item linha__item--esq" style="--gap:126px">
+          <h3><span class="ano">2021 - 2023</span> <span class="linha__titulo linha__titulo--g">Ensino Médio</span></h3>
+          <p class="linha__desc linha__desc--curta">Formação geral.</p>
+          <p class="linha__org">Centro Educa Mais Olindina Nunes Freire - Pedreiras/MA</p>
+        </li>
+        <li class="linha__item linha__item--esq">
+          <h3><span class="ano">2024 - 2027</span> <span class="linha__titulo">Graduação em Ciência da Computação</span></h3>
+          <p class="linha__desc">Em andamento no 5°Período. Base sólida em algoritmos, estrutura de dados e engenharia de software, com foco atual no desenvolvimento prático de aplicações completas.</p>
+          <p class="linha__org">Uninassau - Teresina/PI</p>
+        </li>
+        <li class="linha__item linha__item--dir">
+          <h3><span class="linha__titulo">Fundador &amp; Técnico de Suporte em TI</span> <span class="ano">2020 - 2025</span></h3>
+          <p class="linha__desc">Como fundador e responsável técnico, gerenciei toda a operação de uma loja especializada em infraestrutura de TI. Minha atuação principal envolvia o diagnóstico preciso, reparo e upgrade de hardware de computadores e notebooks, além da instalação e configuração de sistemas operacionais e softwares. Também trabalhei ativamente no projeto e estruturação de redes locais, configurando cabeamentos, roteadores e switches. Ao longo desses anos, desenvolvi uma forte habilidade de comunicação e resolução de problemas através do atendimento direto ao cliente, prestando suporte técnico ágil tanto de forma remota quanto presencial.</p>
+          <p class="linha__org">A.D Information - Trizidela do Vale/ MA</p>
+          <img class="linha__icones" src="assets/img/jornada-fundador.png" alt="Ferramentas: hardware, redes, Linux e Windows" />
+        </li>
+        <li class="linha__item linha__item--dir">
+          <h3><span class="linha__titulo">Designer Gráfico e Operador de Produção</span> <span class="ano">2024</span></h3>
+          <p class="linha__desc">Atuei na criação completa de materiais visuais, unindo o design digital à produção física. Fui responsável por desenvolver identidades visuais, logomarcas e artes para diversos materiais promocionais, utilizando domínio avançado no pacote Adobe (Photoshop e Illustrator) e CorelDRAW. Além do trabalho criativo das interfaces e peças, também operei ativamente o maquinário CNC para cortes a laser em MDF e acrílico, bem como plotters de impressão e corte, garantindo a qualidade visual desde a concepção da arte até o acabamento final do produto.</p>
+          <p class="linha__org">Evoluart - Pedreiras/MA</p>
+          <img class="linha__icones" src="assets/img/jornada-designer.png" alt="Ferramentas: Illustrator, Lightroom, Photoshop, CorelDRAW e Canva" />
+        </li>
+        <li class="linha__item linha__item--esq">
+          <h3><span class="ano">2020 - 2019</span> <span class="linha__titulo">Informática Básica Office</span></h3>
+          <p class="linha__desc">Domínio prático de ferramentas de escritório (Excel, Word, PowerPoint) e fundamentos de sistemas operacionais, essenciais para a organização e análise de dados.</p>
+          <p class="linha__org">IBEM - Pedreiras/MA</p>
+          <img class="linha__icones" src="assets/img/jornada-office.png" alt="Ferramentas: PowerPoint, Linux, Windows, Power BI, Word e Excel" />
+        </li>
+        <li class="linha__item linha__item--esq">
+          <h3><span class="ano">2023 - 2021</span> <span class="linha__titulo">Informática Avançada &amp; Design</span></h3>
+          <p class="linha__desc">Aprofundamento em ferramentas digitais e conceitos práticos de design gráfico, criando a base criativa para a manipulação de imagens e criação de identidades visuais.</p>
+          <p class="linha__org">IBEM - Pedreiras/MA</p>
+          <img class="linha__icones" src="assets/img/jornada-avancada.png" alt="Ferramentas: Illustrator, Lightroom, Photoshop, CorelDRAW e Canva" />
+        </li>
+        <li class="linha__item linha__item--esq">
+          <h3><span class="ano">2024 - 2023</span> <span class="linha__titulo">Montagem/Manutenção de Computadores e Redes</span></h3>
+          <p class="linha__desc">Capacitação técnica focada em infraestrutura: montagem de hardware, diagnóstico e reparo de falhas, manutenção preventiva e configuração de redes locais e cabeamento.</p>
+          <p class="linha__org">IBEM - Pedreiras/MA</p>
+          <img class="linha__icones" src="assets/img/jornada-montagem.png" alt="Ferramentas: Linux e Windows" />
+        </li>
+        <li class="linha__item linha__item--dir">
+          <h3><span class="linha__titulo">Desenvolvedor Front-end &amp; Automação Jr (Estágio)</span></h3>
+          <p class="linha__desc">Atuei no desenvolvimento Full-stack de sites e sistemas, conectando design de interfaces à engenharia de dados. Fui responsável por desenhar a experiência do usuário (UI/UX), criando protótipos de alta fidelidade no Figma para múltiplos clientes corporativos. No desenvolvimento, criei APIs e robôs de automação utilizando Python e Node.js, além de atuar ativamente com banco de dados, realizando consultas complexas em MySQL e análises de Business Intelligence (BI). Todo o processo foi estruturado sob metodologias ágeis (Scrum) e com forte foco em documentação técnica.</p>
+          <p class="linha__org">TDCA - Tadeu Duarte e Consultores Associados - Teresina/PI</p>
+          <img class="linha__icones" src="assets/img/jornada-estagio.png" alt="Ferramentas: Photoshop, CorelDRAW, Canva, Power BI, Excel, HTML, CSS, Figma, Node.js, JavaScript, Python e SQL" />
+        </li>
+        <li class="linha__item linha__item--esq">
+          <h3><span class="ano">2026</span> <span class="linha__titulo">Design de Experiência do Usuário (UX)</span></h3>
+          <p class="linha__desc">Certificação com foco em pesquisa de usuário, wireframing, prototipagem e design centrado no usuário para criação de interfaces acessíveis e intuitivas.</p>
+          <p class="linha__org">Google / Concurseira</p>
+          <img class="linha__icones" src="assets/img/jornada-ux.png" alt="Ferramentas: Canva e Figma" />
+        </li>
+        <li class="linha__item linha__item--esq">
+          <h3><span class="ano">2025</span> <span class="linha__titulo">Programador Web</span></h3>
+          <p class="linha__desc">Formação focada em desenvolvimento web moderno, englobando as tecnologias fundamentais para criação de interfaces dinâmicas.</p>
+          <p class="linha__org">IFRS</p>
+          <img class="linha__icones" src="assets/img/jornada-programador.png" alt="Ferramentas: HTML, CSS, JavaScript e SQL" />
+        </li>
+      </ol>
+      <p class="linha__fim"><span aria-hidden="true">&lt;</span>Continuando me aperfeiçoando</p>
+    </section>
+
+    <!-- ============================ DOMÍNIOS ============================ -->
+    <section class="secao secao--clara dominios" id="dominios" aria-labelledby="dominios-titulo">
+      <div class="container centro">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Domínios</span>
+        <h2 class="titulo titulo--vermelho" id="dominios-titulo">Linguagem e Dominios</h2>
+        <p class="subtitulo subtitulo--estreito">Do design ao código estruturado: o ecossistema de ferramentas e tecnologias que utilizo para transformar ideias em produtos digitais completos.</p>
+      </div>
+      <ul class="dominios__lista">
+        <li class="dominio"><img src="assets/img/tec-photoshop.png" alt="" width="38" height="38" style="--mt:26;--w:38" /><b>Photoshop</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-illustrator.png" alt="" width="40" height="40" style="--mt:25;--w:40" /><b>Ilustrador</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-coreldraw.png" alt="" width="47" height="47" style="--mt:18;--w:47" /><b>CorelDraw</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-figma.png" alt="" width="55" height="55" style="--mt:18;--w:55" /><b>Figma</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-html.png" alt="" width="44" height="44" style="--mt:18;--w:44" /><b>Html</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-css.png" alt="" width="39" height="39" style="--mt:23;--w:39" /><b>CSS</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-js.png" alt="" width="38" height="38" style="--mt:28;--w:38" /><b>Js</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-nodejs.png" alt="" width="38" height="38" style="--mt:28;--w:38" /><b>Node.js</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-python.png" alt="" width="35" height="35" style="--mt:31;--w:35" /><b>Python</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-sql.png" alt="" width="39" height="39" style="--mt:28;--w:39" /><b>SQL</b><span>90%</span></li>
+        <li class="dominio"><img src="assets/img/tec-powerbi.png" alt="" width="35" height="35" style="--mt:30;--w:35" /><b>Power BI</b><span>90%</span></li>
+      </ul>
+    </section>
+
+    <!-- ============================ PROJETOS ============================ -->
+    <section class="secao secao--vermelha projetos" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container centro">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Projetos</span>
+        <h2 class="titulo titulo--grande" id="projetos-titulo">Projetos em Destaque</h2>
+        <p class="subtitulo subtitulo--claro">Cada linha de código e cada pixel têm um propósito. Explore os trabalhos onde uni pesquisa de usuário, prototipação e desenvolvimento web para transformar ideias complexas em interfaces intuitivas.</p>
+      </div>
+      <div class="projetos__lista" id="listaProjetos" aria-live="polite"></div>
+      <div class="centro">
+        <a class="btn-ver-todos js-rede" data-rede="github" href="#" target="_blank" rel="noopener">
+          Ver projeto <img src="assets/img/seta-cima.png" alt="" width="85" height="66" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================ CLIENTES ============================ -->
+    <section class="secao secao--clara clientes" id="clientes" aria-labelledby="clientes-titulo">
+      <div class="container centro">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Meus Clientes</span>
+        <h2 class="titulo titulo--vermelho" id="clientes-titulo">Meus Clientes e Parceiros</h2>
+      </div>
+      <div class="container">
+        <span class="tag tag--clients">&lt;clients&gt;</span>
+        <ul class="clientes__logos">
+          <li><img src="assets/img/cliente-webrota.png" alt="WebRota" width="214" height="46" /></li>
+          <li><img src="assets/img/cliente-fadex.png" alt="FADEX" width="125" height="87" /></li>
+          <li><img src="assets/img/cliente-forno-brasa.png" alt="Forno &amp; Brasa Churrascaria" width="157" height="56" /></li>
+          <li><img src="assets/img/cliente-brandao.png" alt="Construtora Brandão" width="207" height="102" /></li>
+          <li><img src="assets/img/cliente-jl.png" alt="JL Construções" width="195" height="95" /></li>
+        </ul>
+        <span class="tag tag--clients tag--direita">&lt;/clients&gt;</span>
+      </div>
+    </section>
+
+    <!-- ============================ DEPOIMENTOS ============================ -->
+    <section class="secao secao--clara depoimentos" id="depoimentos" aria-labelledby="depoimentos-titulo">
+      <div class="container centro">
+        <span class="badge"><img src="assets/img/badge-chave.png" alt="" />Depoimentos</span>
+        <h2 class="titulo titulo--vermelho titulo--grande" id="depoimentos-titulo">Impacto real, aprovado<br />por clientes reais</h2>
+        <p class="subtitulo subtitulo--depo">O resultado do meu trabalho na visão de quem acompanhou o processo de perto. Estes são depoimentos de parceiros com os quais tive a oportunidade de criar, desenvolver e evoluir produtos.</p>
+      </div>
+      <div class="container carrossel" id="carrossel" aria-roledescription="carrossel">
+        <div class="carrossel__janela">
+          <ul class="carrossel__trilho" id="trilho"></ul>
+        </div>
+        <div class="carrossel__controles">
+          <div class="carrossel__pontos" id="pontos" role="tablist" aria-label="Escolher depoimentos"></div>
+          <div class="carrossel__setas">
+            <button id="anterior" aria-label="Depoimentos anteriores"><img src="assets/img/seta-esquerda.png" alt="" /></button>
+            <button id="proximo" aria-label="Próximos depoimentos"><img src="assets/img/seta-direita.png" alt="" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTATO ============================ -->
+    <section class="secao secao--clara contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato__grade">
+        <div class="contato__texto">
+          <div class="contato__chamada">
+            <img class="contato__chave" src="assets/img/chave-vermelha.png" alt="" width="42" height="190" />
+            <div>
+              <h2 id="contato-titulo">Fale comigo agora!</h2>
+              <p class="contato__status"><span class="ponto-verde" aria-hidden="true"></span>Estou disponível</p>
+            </div>
+          </div>
+          <span class="tag tag--contato">&lt;contact me&gt;</span>
+          <p class="contato__desc">Tem um projeto em mente, uma oportunidade ou quer apenas trocar uma ideia sobre código e design? Farei o possível para te responder o quanto antes!</p>
+          <span class="tag tag--contato tag--contato-fecha">&lt;/contact me&gt;</span>
+        </div>
+        <a class="btn btn--vermelho btn--grande js-whatsapp" href="#" target="_blank" rel="noopener">Mande um oi!</a>
+      </div>
+      <div class="container contato__rodape">
+        <div class="contato__legal">
+          <button class="link-legal" data-modal="termos">Termos de Condição</button>
+          <button class="link-legal" data-modal="privacidade">Política de Privacidade</button>
+        </div>
+        <div class="contato__redes">
+          <p>Redes sociais</p>
+          <div class="sociais">
+            <a class="js-rede" data-rede="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/img/social-linkedin.png" alt="" width="30" height="30" /></a>
+            <a class="js-rede" data-rede="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/social-instagram.png" alt="" width="30" height="30" /></a>
+            <a class="js-whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/img/social-whatsapp.png" alt="" width="30" height="31" /></a>
+            <a class="js-rede" data-rede="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/img/social-github.png" alt="" width="32" height="30" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido com código e design por <strong>Dev Anisio</strong> Todos os direitos reservados © <span id="ano">2026</span> Anisio Diogo</p>
+  </footer>
+
+  <!-- Modais de Termos e Privacidade -->
+  <dialog class="modal" id="modal-termos" aria-labelledby="termos-titulo">
+    <h2 id="termos-titulo">Termos de Condição</h2>
+    <p>Este site é um portfólio pessoal. Os projetos, imagens e marcas exibidos pertencem aos seus respectivos donos e aparecem aqui apenas para apresentar trabalhos realizados.</p>
+    <p>Orçamentos, prazos e condições de cada serviço são combinados diretamente com o cliente antes do início do projeto.</p>
+    <button class="btn btn--vermelho modal__fechar">Fechar</button>
+  </dialog>
+  <dialog class="modal" id="modal-privacidade" aria-labelledby="privacidade-titulo">
+    <h2 id="privacidade-titulo">Política de Privacidade</h2>
+    <p>Este site não tem formulários e não armazena dados pessoais dos visitantes. A única informação guardada no seu navegador é a preferência de tema (claro ou escuro).</p>
+    <p>Ao clicar em WhatsApp, e-mail ou redes sociais, você é levado ao serviço externo correspondente, que segue a sua própria política de privacidade.</p>
+    <button class="btn btn--vermelho modal__fechar">Fechar</button>
+  </dialog>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
