@@ -13,10 +13,10 @@ window.PORTFOLIO_CONFIG = {
 
   /* Redes sociais — troque "#" pelos seus links */
   redes: {
-    linkedin: "#",
-    instagram: "#",
-    discord: "#",
-    github: "#", // ex.: "https://github.com/seu-usuario"
+    linkedin: "https://www.linkedin.com/in/anisio-diogo-50b0542b1/",
+    instagram: "https://www.instagram.com/dev_anisio/",
+    discord: "https://discord.com/users/665882808337694724",
+    github: "https://github.com/anisiodiogo/", // ex.: "https://github.com/seu-usuario"
   },
 
   /* Projetos do GitHub
@@ -24,7 +24,7 @@ window.PORTFOLIO_CONFIG = {
      Para um repositório aparecer, adicione o tópico "portfolio" nele no GitHub
      (ou deixe somenteComTopico: false para mostrar os mais recentes). */
   github: {
-    usuario: "", // ex.: "anisiodiogo"
+    usuario: "anisiodiogo", // ex.: "anisiodiogo"
     somenteComTopico: true,
     topico: "portfolio",
     maximo: 3, // total de cards em "Projetos em Destaque" (manuais + GitHub)
